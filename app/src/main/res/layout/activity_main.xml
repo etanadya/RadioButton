@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/soal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1. Sebutkan Ibu kota Privinsi Sulawesi Tenggara!"
+    android:textColor="#FF000000"
+    android:textSize="18sp" />
+
+<RadioGroup
+    android:id="@+id/rg_jawaban"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/soal">
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soal"
+        android:text="Samarinda"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb1"
+        android:text="Kendari"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb2"
+        android:text="Palu"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/rb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb3"
+        android:text="Makasar"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+</RadioGroup>
+
+<Button
+    android:id="@+id/btn_nilai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rg_jawaban"
+    android:onClick="nilai"
+    android:text="Periksa Nilai" />
+
+<TextView
+    android:id="@+id/tv2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_nilai"
+    android:text="Nilai Anda" />
+
+<TextView
+    android:id="@+id/hasil"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btn_nilai"
+    android:layout_toRightOf="@id/tv2" />
+
+</RelativeLayout>
